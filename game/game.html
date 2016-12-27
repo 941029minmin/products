@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/game.css">
+    <script src="js/hitPix.js"></script>
+    <script src="js/run.js"></script>
+    <script src="js/game.js"></script>
+</head>
+<body>
+    <canvas>你的浏览器不支持canvas,请升级浏览器</canvas>
+    <!--跑-->
+    <img src="img/1.png" alt="" class="run" hidden>
+    <img src="img/2.png" alt="" class="run" hidden>
+    <img src="img/3.png" alt="" class="run" hidden>
+    <img src="img/4.png" alt="" class="run" hidden>
+    <img src="img/5.png" alt="" class="run" hidden>
+    <img src="img/6.png" alt="" class="run" hidden>
+    <img src="img/7.png" alt="" class="run" hidden>
+    <img src="img/8.png" alt="" class="run" hidden>
+    <img src="img/9.png" alt="" class="run" hidden>
+    <!--跳-->
+    <img src="img/3.png" alt="" class="jump" hidden>
+    <!--障碍物-->
+    <img src="img/zhangai/za_05_看图王.png" alt="" class="roadblock" hidden>
+    <img src="img/zhangai/za_06_看图王.png" alt="" class="roadblock" hidden>
+    <img src="img/zhangai/za_09_看图王.png" alt="" class="roadblock" hidden>
+    <img src="img/zhangai/za_11_看图王.png" alt="" class="roadblock" hidden>
+    <img src="img/zhangai/za_12_看图王.png" alt="" class="roadblock" hidden>
+    <img src="img/zhangai/za_14_看图王.png" alt="" class="roadblock" hidden>
+    <!--子弹-->
+    <img src="img/lanqiu.png" alt="" class="zidan" hidden>
+    <!--声音-->
+    <audio src="img/声音/背景-卫敏2.mp3" class="audio"></audio>
+    <audio src="img/声音/起跳.mp3" class="audio"></audio>
+    <audio src="img/声音/子弹-卫敏.mp3" class="audio"></audio>
+    <audio src="img/声音/障碍物爆开.mp3" class="audio"></audio>
+    <audio src="img/声音/游戏失败.mp3" class="audio"></audio>
+    <!--开始界面-->
+    <div class="start">
+        <span class="audio-on"></span><span class="audio-off"></span>
+        <div class="start-btn"></div>
+        <div class="fun">
+        <div class="exit-btn"></div>
+        <div class="tips"></div>
+        </div>
+        <div class="logo"></div>
+    </div>
+    <!--结束界面-->
+    <div class="gameOver">
+        <h3>GAME OVER</h3>
+        <span class="userName">minmin</span><span class="userScore">0</span>
+        <div class="score-area">
+            <h4>高分榜</h4>
+            <ul>
+            </ul>
+        </div>
+        <button class="again btn ">再来一次</button>
+        <div class="exit"></div>
+    </div>
+</body>
+</html>

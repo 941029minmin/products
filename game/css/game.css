@@ -1,0 +1,206 @@
+body,html{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden;
+}
+canvas{
+    background: url("../img/背景.jpg") repeat-x;
+    background-size: contain;
+    position: absolute;
+    left:0;top:0;
+}
+.start{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background:#111 url("../img/开始背景.jpg") ;
+    background-size: 100% 100%;
+    transition: all 2s ease;
+}
+.start .audio-on{
+    position: absolute;
+    width: 50px;
+    height:50px;
+    right: 20px;
+    top:50px;
+    cursor: pointer;
+}
+.start .audio-on:hover{
+    filter: brightness(0.9);
+}
+.start .audio-off{
+    position: absolute;
+    width: 50px;
+    height:50px;
+    right: 90px;
+    top:50px;
+    /*background:url("../img/开始界面/关闭声音.png");*/
+    cursor: pointer;
+
+}
+.start .audio-off:hover{
+    filter: brightness(0.9);
+}
+.start .tips{
+    width:250px;
+    height:130px;
+    /*background: url("../img/开始界面/帮助.png") no-repeat;*/
+    background-size: 100% 100%;
+    cursor: pointer;
+
+
+
+}
+.start .tips:hover{
+    filter: brightness(0.9);
+}
+.fun{
+    height:auto;
+    margin:0 auto;
+    margin-top:230px;
+    display: flex;
+    justify-content: center;
+}
+.start .exit-btn{
+    width:250px;
+    height:130px;
+  /*  position: absolute;
+    bottom:270px;
+    left: 700px;*/
+    /*background: url("../img/开始界面/退出游戏.png") no-repeat;*/
+    background-size: 100% 100%;
+    cursor: pointer;
+
+}
+.start .exit-btn:hover{
+    filter: brightness(0.9);
+}
+.start .start-btn{
+    width:250px;
+    height:130px;
+    position: absolute;
+    top:500px;
+    left: 0;
+    right:0;
+    margin:0 auto;
+    background: url("../img/startbtn (2).png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+
+}
+.logo{
+    width:500px;
+    height:300px;
+    position: absolute;
+    top:100px;
+    left: 0;
+    right:0;
+    margin:0 auto;
+    background: url("../img/logo.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.start .start-btn:hover{
+    filter: brightness(0.9);
+}
+
+/*结束界面*/
+.gameOver{
+    width:600px;
+    height:500px;
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    margin-top:-999px;
+    /*border:3px solid #fff;*/
+    border-radius:15px;
+    transition: margin 2s linear;
+    background: url("../img/开始背景.jpg");
+
+
+}
+.gameOver h3{
+    display: block;
+    text-align: center;
+    margin:30px auto ;
+    font-size:30px;
+    color: #fff;
+}
+.gameOver .userName{
+    float: left;
+    margin-left:160px;
+    color: red;
+    font-size: 20px;
+}
+.gameOver .userScore{
+    display: block;
+    float: left;
+    margin-left:160px;
+    color: red;
+    font-size: 20px;
+}
+.score-area{
+    width:80%;
+    margin:0 auto;
+    padding:25px;
+
+}
+.score-area h4{
+    width:100%;
+    margin:15px auto;
+    text-align: center;
+    color: #fff;
+}
+ul,li{
+    list-style: none;
+}
+.score-area li{
+    height:40px;
+    text-align: left;
+    padding-left:30px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+}
+.score-area li span{
+    width: 30%;
+    float: right;
+    text-align: center;
+}
+
+/*.score-area li:nth-child(2n+1){*/
+    /*background: rgba(200,200,200,.3);*/
+/*}*/
+/*.score-area li:nth-child(2n){*/
+    /*background: rgba(200,200,200,.5);*/
+
+/*}*/
+.again{
+    display: block;
+    margin:0 auto;
+    border-radius: 10px;
+    background: #b71111;
+    font-size: 26px;
+    font-family: "Comic Sans MS";
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    width:300px;
+    border:none;
+    height:60px;
+    cursor: pointer;
+    transition: background .3s linear;
+}
+.again:hover{
+    border:1px solid #6d2c2c;
+    /*background:#6d2c2c;*/
+    box-shadow: 0 0 10px #fff;
+}

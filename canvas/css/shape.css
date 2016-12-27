@@ -1,0 +1,109 @@
+body,ul,li,h1,h2,h3{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+body{
+    background: url("../img/248611.jpg");
+    background-size: cover;
+    font-family: "STXinwei";
+    font-size: 22px;
+    font-weight: 200;
+}
+.box{
+    width:840px;
+    height:550px;
+    /*border:1px solid #000;*/
+    margin:0 auto;
+    box-shadow:0 0 3px #999;
+    margin-top:50px;
+    background: #b6b4b7;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+nav{
+    width:100%;
+    height:50px;
+    background: url("../img/03.jpg");
+    background-size: cover;
+}
+nav ul{
+    width:100%;
+    height:50px;
+}
+nav ul li{
+    width:120px;
+    height:100%;
+    float:left;
+    text-align:center;
+    line-height:50px;
+    cursor: pointer;
+}
+.gd{
+    color:#fff;
+    text-shadow:0 0 3px #000;
+}
+.bottom{
+    width:100%;
+    height:500px;
+}
+.bottom header{
+    width:100px;
+    height:100%;
+    float:left;
+    background: url("../img/03.jpg");
+    background-size: contain;
+}
+.bottom header ul{
+    display:none;
+}
+.bottom header ul li{
+    width:100%;
+    height:50px;
+    text-align:center;
+    line-height:100px;
+    cursor: pointer;
+}
+.bottom header ul input[type=number]{
+    width:50%;
+    text-align:center;
+}
+.bottom header .one{
+    display:block;
+}
+.bottom .canvas{
+    width:740px;
+    height:500px;
+    float:left;
+    position:relative;
+}
+.bottom .canvas canvas{
+    position:absolute;
+    left:0;
+    top:0;
+}
+.bottom .canvas .coty{
+    width:740px;
+    height:500px;
+    position:absolute;
+    z-index:10;
+    left:0;
+    top:0;
+}
+.xp{
+    width:10px;
+    height:10px;
+    position:absolute;
+    left:0;
+    top:0;
+    border:1px solid #000;
+    display:none;
+}
+.selectarea{
+    position:absolute;
+    left:0;top:0;
+    border:1px dotted #000;
+    display:none;
+}
+
+
